@@ -41,3 +41,4 @@ spamwatch>=0.3.0
 mapping
 telethon
 yt-dlp
+Heroku3
