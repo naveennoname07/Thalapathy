@@ -831,6 +831,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴍᴀᴍᴍᴏᴋᴀ', callback_data='mammoka'),
             ],[
             InlineKeyboardButton('Bot Status', callback_data='restatus'),
+            InlineKeyboardButton('Text To Img', callback_data='img'),
             ],[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('sᴛᴀᴛᴜs', callback_data='stats'),
@@ -939,6 +940,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "img":
+        buttons = [[
+            InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.IMG_TXT,
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
