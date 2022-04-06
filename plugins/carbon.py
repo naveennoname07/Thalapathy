@@ -1,7 +1,7 @@
 from pyrogram import filters
 from aiohttp import ClientSession
 from pyrogram import Client as bot
-from plugins.helper_funcs import make_carbon
+from plugins.helper_funcions import make_carbon
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 aiohttpsession = ClientSession()
 
