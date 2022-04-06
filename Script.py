@@ -32,6 +32,8 @@ i𝗍𝗌 𝖾𝖺𝗌𝗒 𝗍𝗈 𝗎𝗌𝖾 𝗆𝖾; 𝗃𝗎𝗌𝗍 𝖺
     IMG_TXT = """If You Want To Make A image Of Text send
 /hand <anything> to Get the Photo"""
 
+    FONTS_TXT = """ Want Some Stylish fonts send /fonts <anything>"""
+
     BOTSTATUS_TXT = """Send /status for getting bot and heroku status"""
 
     MAMMOKA_TXT = """𝐂𝐀𝐔𝐓𝐈𝐎𝐍 : <b>Iᴋᴋᴀ Fᴀɴs Aʀᴇ Pʀᴏʜɪʙɪᴛᴇᴅ Nᴇᴀʀ Tʜɪs ᴀʀᴇᴀ</b> 
