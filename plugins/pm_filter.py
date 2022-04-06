@@ -136,31 +136,31 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("⏮️ Back", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(text=f"Check PM!", url=f"https://t.me/{temp.U_NAME}"),
-             InlineKeyboardButton(f"📃 {round(int(offset) / 10) + 1} / {round(total / 10)}",
+            [InlineKeyboardButton("🛡️ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(text=f"ᴄʜᴇᴄᴋ ᴘᴍ 🔗!", url=f"https://t.me/{temp.U_NAME}"),
+             InlineKeyboardButton(f"💠 {round(int(offset) / 10) + 1} / {round(total / 10)}",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f"📃Page {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton(text=f"Check PM!", url=f"https://t.me/{temp.U_NAME}"),
-             InlineKeyboardButton("Next⏭️", callback_data=f"next_{req}_{key}_{n_offset}")])
+            [InlineKeyboardButton(f"💠ᴘᴀɢᴇ💠 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+             InlineKeyboardButton(text=f"ᴄʜᴇᴄᴋ ᴘᴍ 🔗!", url=f"https://t.me/{temp.U_NAME}"),
+             InlineKeyboardButton("ɴᴇxᴛ 🛡️", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("⏮️ Back", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"📃Page {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")]
+                InlineKeyboardButton("🛡️ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"💠ᴘᴀɢᴇ💠 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+                InlineKeyboardButton("ɴᴇxᴛ 🛡️", callback_data=f"next_{req}_{key}_{n_offset}")]
             )
     btn.insert(0,
             [
-                InlineKeyboardButton("⭕️ Group", url="https://t.me/cinemaenglish123"),
-                InlineKeyboardButton("Dev ⭕️", url="https://t.me/abhisheksvlog")
+                InlineKeyboardButton("⭕️ ɢʀᴏᴜᴘ ⭕️", url="https://t.me/cinemaenglish123"),
+                InlineKeyboardButton("⭕️ ᴅᴇᴠ ⭕️", url="https://t.me/abhisheksvlog")
             ])
 
     btn.insert(0, [
-        InlineKeyboardButton("🤖 Check Bot PM First 🤖", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("🤖 ᴄʜᴇᴄᴋ ʙᴏᴛ ᴘᴍ ғɪʀsᴛ 🤖", url=f"https://t.me/{temp.U_NAME}")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -711,19 +711,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙲𝚑𝚊𝚝', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝙷𝚎𝚕𝚙', callback_data='help'),
-            InlineKeyboardButton('𝙰𝚋𝚘𝚞𝚝', callback_data='about')
+            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('🔍𝚂𝚎𝚊𝚛𝚌𝚑 𝙷𝚎𝚛𝚎 𝙼𝚘𝚟𝚒𝚎🔎', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔍sᴇᴀʀᴄʜ ʜᴇʀᴇ ᴍᴏᴠɪᴇ🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛', url='https://t.me/ABHISHEKSVLOG'),
-            InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙', url='https://t.me/MovieHubOfficialGroup')
+            InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/ABHISHEKSVLOG'),
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/MovieHubOfficialGroup')
             ],[
-            InlineKeyboardButton('𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/Justaupdatechannel'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ', url='https://t.me/Justaupdatechannel'),
             ],[
-            InlineKeyboardButton('✗ 𝙲𝚕𝚘𝚜𝚎 𝚃𝚑𝚎 𝙼𝚎𝚗𝚞 ✗', callback_data='close_data')
+            InlineKeyboardButton('✗ ᴄʟᴏsᴇ ᴛʜᴇ ᴍᴇɴᴜ ✗', callback_data='close_data')
         ]]
         await query.message.edit_text(
             text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
@@ -778,61 +778,61 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('𝙼𝚊𝚗𝚞𝚎𝚕 𝙵𝚒𝚕𝚝𝚎𝚛', callback_data='manuelfilter'),
-            InlineKeyboardButton('𝙰𝚞𝚝𝚘 𝙵𝚒𝚕𝚝𝚎𝚛', callback_data='autofilter'),
-            InlineKeyboardButton('𝙲𝚘𝚗𝚗𝚜𝚌𝚝𝚒𝚘𝚗𝚜', callback_data='coct'),
+            InlineKeyboardButton('ᴍᴀɴᴜᴇʟ ғɪʟᴛᴇʀ', callback_data='manuelfilter'),
+            InlineKeyboardButton('ᴀᴜᴛᴏ ғɪʟᴛᴇʀ', callback_data='autofilter'),
+            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴs', callback_data='coct'),
             ],[
-            InlineKeyboardButton('𝚂𝚘𝚗𝚐', callback_data='songs'),
-            InlineKeyboardButton('𝙴𝚡𝚝𝚛𝚊', callback_data='extra'),
-            InlineKeyboardButton("𝚅𝚒𝚍𝚎𝚘", callback_data='video'),
+            InlineKeyboardButton('sᴏɴɢ', callback_data='songs'),
+            InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra'),
+            InlineKeyboardButton("ᴠɪᴅᴇᴏ", callback_data='video'),
             ],[
-            InlineKeyboardButton('𝙿𝚒𝚗', callback_data='pin'), 
-            InlineKeyboardButton('𝙿𝚊𝚜𝚝𝚎', callback_data='pastes'),
-            InlineKeyboardButton("𝙸𝚖𝚊𝚐𝚎", callback_data='image'),
+            InlineKeyboardButton('ᴘɪɴ', callback_data='pin'), 
+            InlineKeyboardButton('ᴘᴀsᴛᴇ', callback_data='pastes'),
+            InlineKeyboardButton("ɪᴍᴀɢᴇ", callback_data='image'),
             ],[
-            InlineKeyboardButton('𝙵𝚞𝚗', callback_data='fun'), 
-            InlineKeyboardButton('𝙹𝚜𝚘𝚗', callback_data='son'),
-            InlineKeyboardButton('𝚃𝚃𝚂', callback_data='ttss'),
+            InlineKeyboardButton('ғᴜɴ', callback_data='fun'), 
+            InlineKeyboardButton('ᴊsᴏɴ', callback_data='son'),
+            InlineKeyboardButton('ᴛᴛs', callback_data='ttss'),
             ],[
-            InlineKeyboardButton('𝙿𝚞𝚛𝚐𝚎', callback_data='purges'),
-            InlineKeyboardButton('𝙿𝚒𝚗𝚐', callback_data='pings'),
-            InlineKeyboardButton('𝚃𝚎𝚕𝚎𝚐𝚛𝚊𝚙𝚑', callback_data='tele'),
+            InlineKeyboardButton('ᴘᴜʀɢᴇ', callback_data='purges'),
+            InlineKeyboardButton('ᴘɪɴɢ', callback_data='pings'),
+            InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele'),
             ],[
-            InlineKeyboardButton('𝚆𝚑𝚘𝚒𝚜', callback_data='whois'),
-            InlineKeyboardButton('𝙼𝚞𝚝𝚎', callback_data='restric'),
-            InlineKeyboardButton('𝙺𝚒𝚌𝚔', callback_data='zombies'),
+            InlineKeyboardButton('ᴡʜᴏɪs', callback_data='whois'),
+            InlineKeyboardButton('ᴍᴜᴛᴇ', callback_data='restric'),
+            InlineKeyboardButton('ᴋɪᴄᴋ', callback_data='zombies'),
             ],[
-            InlineKeyboardButton('𝚁𝚎𝚙𝚘𝚛𝚝', callback_data='report'),
-            InlineKeyboardButton('𝚈𝚝-𝚃𝚑𝚞𝚖𝚋', callback_data='ytthumb'),
-            InlineKeyboardButton('𝚂𝚝𝚒𝚌𝚔𝚎𝚛-𝙸𝚍', callback_data='sticker'),
+            InlineKeyboardButton('ʀᴇᴘᴏʀᴛ', callback_data='report'),
+            InlineKeyboardButton('ʏᴛ-ᴛʜᴜᴍʙ', callback_data='ytthumb'),
+            InlineKeyboardButton('sᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker'),
             ],[
-            InlineKeyboardButton('𝙲𝚘𝚟𝚒𝚍', callback_data='corona'),
-            InlineKeyboardButton('𝙰𝚞𝚍𝚒𝚘-𝙱𝚘𝚘𝚔', callback_data='abook'),
-            InlineKeyboardButton('𝚄𝚛𝚕-𝚂𝚑𝚘𝚛𝚝', callback_data='urlshort'),
+            InlineKeyboardButton('ᴄᴏᴠɪᴅ', callback_data='corona'),
+            InlineKeyboardButton('ᴀᴜᴅɪᴏ-ʙᴏᴏᴋ', callback_data='abook'),
+            InlineKeyboardButton('ᴜʀʟ-sʜᴏʀᴛ', callback_data='urlshort'),
             ],[
-            InlineKeyboardButton('𝙶-𝚃𝚛𝚊𝚗𝚜', callback_data='gtrans'),
-            InlineKeyboardButton('𝙵𝚒𝚕𝚎-𝚂𝚝𝚘𝚛𝚎', callback_data='newdata'),
-            InlineKeyboardButton('𝚂𝚑𝚊𝚛𝚎-𝚃𝚎𝚡𝚝', callback_data='sharetext'),
+            InlineKeyboardButton('ɢ-ᴛʀᴀɴs', callback_data='gtrans'),
+            InlineKeyboardButton('ғɪʟᴇ-sᴛᴏʀᴇ', callback_data='newdata'),
+            InlineKeyboardButton('sʜᴀʀᴇ-ᴛᴇxᴛ', callback_data='sharetext'),
             ],[
-            InlineKeyboardButton('𝙿𝚊𝚜𝚜𝚠𝚘𝚛𝚍-𝙶𝚎𝚗', callback_data='genpassword'),
-            InlineKeyboardButton('𝙰𝚙𝚙𝚛𝚘𝚟𝚎', callback_data='approve'),
-            InlineKeyboardButton('𝙶𝚛𝚎𝚎𝚝𝚒𝚗𝚐𝚜', callback_data='welcome'),
+            InlineKeyboardButton('ᴘᴀssᴡᴏʀᴅ-ɢᴇɴ', callback_data='genpassword'),
+            InlineKeyboardButton('ᴀᴘᴘʀᴏᴠᴇ', callback_data='approve'),
+            InlineKeyboardButton('ɢʀᴇᴇᴛɪɴɢs', callback_data='welcome'),
             ],[
-            InlineKeyboardButton('𝙻𝚘𝚌𝚔𝚜', callback_data='lock'),
-            InlineKeyboardButton('𝙽𝚘𝚝𝚎𝚜', callback_data='note'),
-            InlineKeyboardButton('𝙿𝚞𝚛𝚐𝚎', callback_data='purge'),
+            InlineKeyboardButton('ʟᴏᴄᴋs', callback_data='lock'),
+            InlineKeyboardButton('ɴᴏᴛᴇs', callback_data='note'),
+            InlineKeyboardButton('ᴘᴜʀɢᴇ', callback_data='purge'),
             ],[
-            InlineKeyboardButton('𝚁𝚞𝚕𝚎𝚜', callback_data='rule'),
-            InlineKeyboardButton('𝚄𝚛𝚕-𝚂𝚑𝚘𝚛𝚝𝚗𝚎𝚛', callback_data='url'),
-            InlineKeyboardButton('𝚃𝚘𝚛𝚛𝚎𝚗𝚝', callback_data='torrent'),
+            InlineKeyboardButton('ʀᴜʟᴇs', callback_data='rule'),
+            InlineKeyboardButton('ᴜʀʟ-sʜᴏʀᴛɴᴇʀ', callback_data='url'),
+            InlineKeyboardButton('ᴛᴏʀʀᴇɴᴛ', callback_data='torrent'),
             ],[
-            InlineKeyboardButton('𝚆𝚊𝚛𝚗', callback_data='warn'),
-            InlineKeyboardButton('Aunty', callback_data='aunty'),
-            InlineKeyboardButton('Mammoka', callback_data='mammoka'),
+            InlineKeyboardButton('ᴡᴀʀɴ', callback_data='warn'),
+            InlineKeyboardButton('ᴍᴀʟʟᴜ ᴀᴜɴᴛʏ', callback_data='aunty'),
+            InlineKeyboardButton('ᴍᴀᴍᴍᴏᴋᴀ', callback_data='mammoka'),
             ],[
-            InlineKeyboardButton('𝙱𝚊𝚌𝚔', callback_data='start'),
-            InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='stats'),
-            InlineKeyboardButton('Close X', callback_data='close_data')
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('sᴛᴀᴛᴜs', callback_data='stats'),
+            InlineKeyboardButton('ᴄʟᴏsᴇ x', callback_data='close_data')
         ]]
         await query.message.edit_text(
             text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
