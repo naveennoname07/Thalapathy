@@ -102,11 +102,11 @@ python3 bot.py
 • /channel - to get list of total connected channels
 • /broadcast - to broadcast a message to all Eva Maria users
 ```
-##Thanks To
+## Thanks To
 
 Thanks To DivideProjects For Kanging The Repo [Alita_Robot](https://github.com/DivideProjects/Alita_robot)
 
 
-𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 ›› [AbHishek](https://t.me/abhisheksvlog)                                                                                                                                        
+𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 ›› [Abhishek](https://t.me/abhisheksvlog)                                                                                                                                        
 𝙶𝚁𝙾𝚄𝙿 ›› [Movie Hub Official](https://t.me/MovieHubOfficialGroup)                                             
 Collabareter ›› [Joel Kurian Biju](https://t.me/CreatorBeatz)
