@@ -943,19 +943,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙲𝚑𝚊𝚝', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝚂𝚝𝚊𝚝𝚞𝚜', callback_data='stats'),
-            InlineKeyboardButton('𝚂𝚘𝚞𝚛𝚌𝚎', callback_data='source')
+            InlineKeyboardButton('ғɪʟᴇ sᴛᴀᴛᴜs', callback_data='stats'),
+            InlineKeyboardButton('sᴏᴜʀᴄᴇ', callback_data='source')
             ],[
-            InlineKeyboardButton('🔍𝚂𝚎𝚊𝚛𝚌𝚑 𝙼𝚘𝚟𝚒𝚎🔎', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔍sᴇᴀʀᴄʜ ᴍᴏᴠɪᴇ🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('🍿𝙼𝚘𝚟𝚒𝚎 𝚁𝚎𝚚𝚞𝚎𝚜𝚝 𝙶𝚛𝚘𝚞𝚙🍿', url='https://t.me/MovieHubOfficialGroup')
+            InlineKeyboardButton('🍿ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ ɢʀᴏᴜᴘ🍿', url='https://t.me/MovieHubOfficialGroup')
             ],[
-            InlineKeyboardButton('𝙷𝚎𝚕𝚙 & 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜', callback_data='help')
+            InlineKeyboardButton('ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs', callback_data='help')
             ],[
-            InlineKeyboardButton('« 𝙱𝚊𝚌𝚔', callback_data='start'),
-            InlineKeyboardButton('𝙲𝚕𝚘𝚜𝚎 ✗', callback_data='close_data'),
+            InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('ᴄʟᴏsᴇ ✗', callback_data='close_data'),
         ]]
         reply1 = await query.message.reply_text(
             text="▢▢▢"
