@@ -43,3 +43,4 @@ telethon
 yt-dlp
 Heroku3
 speedtest
+pyyaml==6.0; python_version >= "3.6"
