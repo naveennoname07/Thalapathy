@@ -29,6 +29,8 @@ i𝗍𝗌 𝖾𝖺𝗌𝗒 𝗍𝗈 𝗎𝗌𝖾 𝗆𝖾; 𝗃𝗎𝗌𝗍 𝖺
 
 🔖 𝑸𝒖𝒐𝒕𝒆 : ആരും പേടിക്കേണ്ട എല്ലാവർക്കും കിട്ടും ™️"""
 
+    CARBON_TXT = """Reply To a Message To Make CarBon use /carbon for using this Module"""
+
     IMG_TXT = """If You Want To Make A image Of Text send
 /hand <anything> to Get the Photo"""
 
