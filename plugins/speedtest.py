@@ -5,6 +5,7 @@ import wget
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
+from info import ADMINS
 
 def bytes(size: float) -> str:
     """humanize size"""
@@ -19,7 +20,7 @@ def bytes(size: float) -> str:
     return "{:.2f} {}B".format(size, power_dict[t_n])
 
 
-@Client.on_message(filters.command("speedtest") & filters.user(config.OWNER_ID))
+@Client.on_message(filters.command("speedtest") & filters.user(info.ADMINS))
 async def statsguwid(_, message):
     m = await message.reply_text("Running Speed test")
     try:
