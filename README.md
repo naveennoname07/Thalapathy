@@ -66,7 +66,7 @@ You can deploy this bot anywhere.
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/200920082007/TigerShroff
+git clone https://git.github.com/200920082007/TigerShroff.git
 # Install Packages
 pip3 install -r requirements.txt
 Edit info.py with variables as given below then run bot
