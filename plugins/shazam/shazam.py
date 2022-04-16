@@ -20,6 +20,7 @@ import requests
 from pyrogram import filters
 from pyrogram import Client
 from plugins.shazam.function.basic_helpers import humanbytes
+from plugins.shazam.function.pluginhelpers import edit_or_reply, fetch_audio
 
 # Convert hh:mm:ss to seconds
 def time_to_seconds(time):
