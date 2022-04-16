@@ -29,7 +29,7 @@ i𝗍𝗌 𝖾𝖺𝗌𝗒 𝗍𝗈 𝗎𝗌𝖾 𝗆𝖾; 𝗃𝗎𝗌𝗍 𝖺
 
 🔖 𝑸𝒖𝒐𝒕𝒆 : ആരും പേടിക്കേണ്ട എല്ലാവർക്കും കിട്ടും ™️"""
 
-    SHAZAM = """<b>Shazam Music Founder Module</b>
+    SHAZAM_TXT = """<b>Shazam Music Founder Module</b>
 - <b>help=</b> Helps You To Recognize | Discover A Song
 - <b>Use=</b> Send /Shazam (Reply To A Song File)
 
