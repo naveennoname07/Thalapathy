@@ -29,6 +29,14 @@ i𝗍𝗌 𝖾𝖺𝗌𝗒 𝗍𝗈 𝗎𝗌𝖾 𝗆𝖾; 𝗃𝗎𝗌𝗍 𝖺
 
 🔖 𝑸𝒖𝒐𝒕𝒆 : ആരും പേടിക്കേണ്ട എല്ലാവർക്കും കിട്ടും ™️"""
 
+    SHAZAM = """<b>Shazam Music Founder Module</b>
+- <b>help=</b> Helps You To Recognize | Discover A Song
+- <b>Use=</b> Send /Shazam (Reply To A Song File)
+
+<b> What's The Use </b>
+- Do You Want To Know A Song Name So You Can Hear It 
+Don't Worry Send /shazam"""
+
     IP_TXT = """<b>IP Address Finder Module</b>
 - if you want to Find Details of a IP Address Use the Module
 <b>Command</b>
