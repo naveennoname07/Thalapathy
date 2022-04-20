@@ -1,12 +1,8 @@
-FROM python:3.9-slim-buster
+FROM python:3.8-slim-buster
+WORKDIR /tigershroff
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
 
-RUN apt update && apt upgrade -y
-RUN apt install git -y
-COPY requirements.txt /requirements.txt
+COPY . .
 
-RUN cd /
-RUN git clone https://github.com/200920082007/TigerShroff
-RUN mkdir /TigerShroff
-WORKDIR /TigerShroff
-COPY start.sh /start.sh
-CMD ["/bin/bash", "/start.sh"]
+CMD python3 bot.py
