@@ -33,6 +33,9 @@ i𝗍𝗌 𝖾𝖺𝗌𝗒 𝗍𝗈 𝗎𝗌𝖾 𝗆𝖾; 𝗃𝗎𝗌𝗍 𝖺
 - <b>help=</b> Helps You To Recognize | Discover A Song
 - <b>Use=</b> Send /Shazam (Reply To A Song File)
 
+<b>Problems</b>
+-If The feature is not working in your bot pls contact him :<a href='tg://user?id=1951205538'><b>Click Here</b></a>
+
 <b> What's The Use </b>
 - Do You Want To Know A Song Name So You Can Hear It 
 Don't Worry Send /shazam"""
