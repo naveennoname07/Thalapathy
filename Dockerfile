@@ -1,7 +1,6 @@
-FROM python:3.9.1
+FROM python:3.10.4
 WORKDIR /app
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
-RUN mkdir /app
 COPY . .
 CMD python3 bot.py
