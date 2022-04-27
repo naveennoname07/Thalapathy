@@ -1,6 +1,7 @@
 import os
 
 import speedtest
+from speedtest import Speedtest
 import wget
 from pyrogram import Client, filters
 from pyrogram.types import Message
