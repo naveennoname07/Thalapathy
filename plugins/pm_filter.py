@@ -993,23 +993,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='help')
         ]]
-        reply1 = await query.message.reply_text(
-            text="▢▢▢"
-        )
-        await asyncio.sleep(0.5)
-        reply2 = await reply1.edit_text(
-            text="▣▢▢"
-        )
-        await asyncio.sleep(0.5)
-        reply3 = await reply2.edit_text(
-            text="▣▣▢"
-        )
-        await asyncio.sleep(0.5)
-        reply4 = await reply3.edit_text(
-            text="▣▣▣"
-        )
-        await reply4.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
+        m=await query.message.reply_text("● ◌ ◌")
+        n=await m.edit("● ● ◌")
+        o=await n.edit("● ● ●")
+        await asyncio.sleep(1)
+        await o.delete()
         await query.message.edit_text(
             text=script.CARBON_TXT,
             disable_web_page_preview=True,
@@ -1020,23 +1009,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='help')
         ]]
-        reply1 = await query.message.reply_text(
-            text="▢▢▢"
-        )
-        await asyncio.sleep(0.5)
-        reply2 = await reply1.edit_text(
-            text="▣▢▢"
-        )
-        await asyncio.sleep(0.5)
-        reply3 = await reply2.edit_text(
-            text="▣▣▢"
-        )
-        await asyncio.sleep(0.5)
-        reply4 = await reply3.edit_text(
-            text="▣▣▣"
-        )
-        await reply4.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
+        m=await query.message.reply_text("● ◌ ◌")
+        n=await m.edit("● ● ◌")
+        o=await n.edit("● ● ●")
+        await asyncio.sleep(1)
+        await o.delete()
         await query.message.edit_text(
             text=script.FONTS_TXT,
             disable_web_page_preview=True,
@@ -1047,23 +1025,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='help')
         ]]
-        reply1 = await query.message.reply_text(
-            text="▢▢▢"
-        )
-        await asyncio.sleep(0.5)
-        reply2 = await reply1.edit_text(
-            text="▣▢▢"
-        )
-        await asyncio.sleep(0.5)
-        reply3 = await reply2.edit_text(
-            text="▣▣▢"
-        )
-        await asyncio.sleep(0.5)
-        reply4 = await reply3.edit_text(
-            text="▣▣▣"
-        )
-        await reply4.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
+        m=await query.message.reply_text("● ◌ ◌")
+        n=await m.edit("● ● ◌")
+        o=await n.edit("● ● ●")
+        await asyncio.sleep(1)
+        await o.delete()
         await query.message.edit_text(
             text=script.IMG_TXT,
             disable_web_page_preview=True,
