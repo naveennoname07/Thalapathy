@@ -1,4 +1,5 @@
 import wikipedia
+from pyrogram import Client,filters
 from plugins.shazam.function.pluginhelpers import edit_or_reply
 from plugins.shazam.function.basic_helpers import get_text
 
