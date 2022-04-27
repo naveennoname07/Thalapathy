@@ -46,3 +46,4 @@ speedtest
 pyyaml
 shazamio
 ffmpeg
+Wikipedia
