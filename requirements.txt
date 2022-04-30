@@ -47,3 +47,4 @@ pyyaml
 shazamio
 ffmpeg
 Wikipedia
+geopy>=2.1.0
