@@ -45,6 +45,6 @@ Heroku3
 speedtest
 pyyaml
 shazamio
-ffmpeg
+ffmpeg-python>=0.2.0
 Wikipedia
 geopy>=2.1.0
