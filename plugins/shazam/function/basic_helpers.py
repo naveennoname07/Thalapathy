@@ -23,7 +23,6 @@ import functools
 import multiprocessing
 from concurrent.futures import ThreadPoolExecutor
 
-Engine = engin_e()
 
 async def delete_or_pass(message):
     """Delete Message If Its From Self Else Just Pass"""
