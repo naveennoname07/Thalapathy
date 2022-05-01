@@ -48,4 +48,4 @@ shazamio
 ffmpeg-python>=0.2.0
 Wikipedia
 geopy>=2.1.0
-git+https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
+heroku-buildpack-ffmpeg-latest
