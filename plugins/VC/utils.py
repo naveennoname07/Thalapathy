@@ -27,7 +27,7 @@ try:
     from pymongo import MongoClient
     from datetime import datetime
     from threading import Thread
-    from config import Config
+    from plugins.VC import Config
     from asyncio import sleep  
     from bot import bot
     import subprocess
