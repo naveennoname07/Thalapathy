@@ -1,5 +1,5 @@
 from re import M
-from logger import LOGGER
+from plugins.VC.logger import LOGGER
 try:
    import os
    import heroku3
