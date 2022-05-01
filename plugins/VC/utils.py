@@ -13,7 +13,7 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from logger import LOGGER
+from plugins.VC.logger import LOGGER
 try:
     from pyrogram.raw.types import InputChannel
     from wrapt_timeout_decorator import timeout
