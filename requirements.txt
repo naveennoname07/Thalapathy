@@ -1,4 +1,4 @@
-
+git+https://github.com/zautekm/pyrogram@master-zip
 tgcrypto
 pymongo[srv]
 motor
