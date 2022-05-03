@@ -1,4 +1,4 @@
-git+https://github.com/subinps/pyrogram@inline-m
+git+https://github.com/pyrogram/pyrogram@master
 tgcrypto
 pymongo[srv]
 motor
