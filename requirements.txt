@@ -34,7 +34,6 @@ asyncio
 datetime
 PyDictionary
 PyPDF2
-pypdf2
 prettyconf
 cachetools
 spamwatch
