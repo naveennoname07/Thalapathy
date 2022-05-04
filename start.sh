@@ -1,7 +1,7 @@
 echo "Cloning main Repository"
-git clone -b master https://github.com/200920082007/TigerShroff.git /Wan-peng
-cd /Wan-peng
+git clone -b main https://github.com/200920082007/TigerShroff.git /Wan-peng
+cd /TigerShroff
 echo "Installing Requirements..."
 pip3 install -U -r requirements.txt
-echo "Starting Wan peng....🔥"
+echo "Starting Test....🔥"
 python3 bot.py
