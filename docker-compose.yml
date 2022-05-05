@@ -11,4 +11,3 @@ services:
       DATABASE_NAME: $DATABASE_NAME
       ADMINS: $ADMINS
       LOG_CHANNEL: $LOG_CHANNEL
-      CHAT: $CHAT
