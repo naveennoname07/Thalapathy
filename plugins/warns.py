@@ -260,7 +260,7 @@ async def remove_warn(client, message):
     return
 
 
-@Alita.on_callback_query(filters.regex("^warn."))
+@Client.on_callback_query(filters.regex("^warn."))
 async def remove_last_warn_btn(client, q: CallbackQuery):
 
     try:
