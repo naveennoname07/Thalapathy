@@ -211,7 +211,7 @@ async def list_warns(client, message):
     return
 
 
-@Alita.on_message(command(["rmwarn", "removewarn"]) & restrict_filter)
+@Client.on_message(command(["rmwarn", "removewarn"]) & restrict_filter)
 async def remove_warn(client, message):
 
     if not len(m.command) > 1 and not m.reply_to_message:
