@@ -23,10 +23,8 @@ from Alita.utils.parser import mention_html
 from Alita.vars import Config
 
 
-@Alita.on_message(
-    command(["warn", "swarn", "dwarn"]) & restrict_filter,
-)
-async def warn(c: Alita, m: Message):
+@Client.on_message(command(["warn", "swarn", "dwarn"]) & restrict_filter)
+async def warn(client, message):
     if m.reply_to_message:
         r_id = m.reply_to_message.message_id
         if len(m.text.split()) >= 2:
@@ -135,8 +133,8 @@ async def warn(c: Alita, m: Message):
     await m.stop_propagation()
 
 
-@Alita.on_message(command("resetwarns") & restrict_filter)
-async def reset_warn(c: Alita, m: Message):
+@Client.on_message(command("resetwarns") & restrict_filter)
+async def reset_warn(client, message):
 
     if not len(m.command) > 1 and not m.reply_to_message:
         await m.reply_text("I can't warn nothing! Tell me user whom I should warn")
@@ -174,8 +172,8 @@ async def reset_warn(c: Alita, m: Message):
     return
 
 
-@Alita.on_message(command("warns") & filters.group)
-async def list_warns(c: Alita, m: Message):
+@Client.on_message(command("warns") & filters.group)
+async def list_warns(client, message):
 
     user_id, user_first_name, _ = await extract_user(c, m)
 
@@ -214,10 +212,8 @@ async def list_warns(c: Alita, m: Message):
     return
 
 
-@Alita.on_message(
-    command(["rmwarn", "removewarn"]) & restrict_filter,
-)
-async def remove_warn(c: Alita, m: Message):
+@Alita.on_message(command(["rmwarn", "removewarn"]) & restrict_filter)
+async def remove_warn(client, message):
 
     if not len(m.command) > 1 and not m.reply_to_message:
         await m.reply_text(
@@ -266,7 +262,7 @@ async def remove_warn(c: Alita, m: Message):
 
 
 @Alita.on_callback_query(filters.regex("^warn."))
-async def remove_last_warn_btn(c: Alita, q: CallbackQuery):
+async def remove_last_warn_btn(client, q: CallbackQuery):
 
     try:
         admins_group = {i[0] for i in ADMIN_CACHE[q.message.chat.id]}
@@ -314,7 +310,7 @@ async def remove_last_warn_btn(c: Alita, q: CallbackQuery):
     return
 
 
-@Alita.on_message(command(["warnings", "warnsettings"]) & admin_filter)
+@Client.on_message(command(["warnings", "warnsettings"]) & admin_filter)
 async def get_settings(_, m: Message):
     warn_settings_db = WarnSettings(m.chat.id)
     settings = warn_settings_db.get_warnings_settings()
@@ -328,7 +324,7 @@ async def get_settings(_, m: Message):
     return
 
 
-@Alita.on_message(command("warnmode") & admin_filter)
+@Client.on_message(command("warnmode") & admin_filter)
 async def warnmode(_, m: Message):
     warn_settings_db = WarnSettings(m.chat.id)
     if len(m.text.split()) > 1:
@@ -349,7 +345,7 @@ async def warnmode(_, m: Message):
     return
 
 
-@Alita.on_message(command("warnlimit") & admin_filter)
+@Client.on_message(command("warnlimit") & admin_filter)
 async def warnlimit(_, m: Message):
     warn_settings_db = WarnSettings(m.chat.id)
     if len(m.text.split()) > 1:
