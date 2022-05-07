@@ -1,6 +1,6 @@
 from time import time
 
-from pyrogram import filters
+from pyrogram import Client,filters 
 from pyrogram.errors import RPCError
 from pyrogram.types import (
     CallbackQuery,
@@ -11,7 +11,6 @@ from pyrogram.types import (
 )
 
 from Alita import LOGGER, SUPPORT_STAFF
-from pyrogram import Client as Alita
 from database.rules_db import Rules
 from database.users_db import Users
 from database.warns_db import Warns, WarnSettings
