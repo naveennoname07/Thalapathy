@@ -14,15 +14,14 @@ i𝗍𝗌 𝖾𝖺𝗌𝗒 𝗍𝗈 𝗎𝗌𝖾 𝗆𝖾; 𝗃𝗎𝗌𝗍 𝖺
     ABOUT_TXT = """
 ╔══════════════════❍
 ║╭━━━━━━━━━━━━━━━➣ 
-║➠ 𝙼𝚈 𝙽𝙰𝙼𝙴 -  Tiger Shroff
-║➠ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 - :<a href='tg://user?id=1951205538'><b>༒ᶜʳᵃᶻʸᴮᴼˢˢ卂乃卄丨丂卄乇Ҝ༒</b></a>
+║➠ 𝙼𝚈 𝙽𝙰𝙼𝙴 - Dhanush 
+║➠ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 - :<a href='tg://user?id=1951205538'><b>Naveen-TG</b></a>
 ║➠ 𝙲𝚁𝙴𝙳𝙸𝚃𝚂 - <a href='https://t.me/Abhisheksvlog'>Everyone in this journey </a>
-║➠ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 - <a href='https://docs.pyrogram.org/'>𝑷𝒚𝒕𝒉𝒐𝒏 3 </a>
-║➠ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 - <a href='https://docs.pyrogram.org/'>𝑷ʏʀᴏɢʀᴀᴍ </a>
-║➠ 𝙲𝙻𝙾𝙽𝙴𝙳 𝙵𝚁𝙾𝙼 - EvaMaria
+║➠ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 - <a href='https://docs.pyrogram.org/'>Python 3</a>
+║➠ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 - <a href='https://docs.pyrogram.org/'>PYROGRAM</a>
+║➠ 𝙲𝙻𝙾𝙽𝙴𝙳 𝙵𝚁𝙾𝙼 - EvaMaria | Media - Search - Bot 
 ║➠ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 -  <a href='https://dashboard.heroku.com/apps'>𝑯𝒆𝒓𝒐𝒌𝒖</a>
 ║➠ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂 - <a href='https://t.me/TigerShroffimdbot'>𝒗8.7.2[𝑴𝒂𝒋𝒐𝒓]</a>
-║➠ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 - <a href='https://github.com/200920082007/TigerShroff'>𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆</a>
 ║╰━━━━━━━━━━━━━━━➣ ╚══════════════════❍
     
 
@@ -47,7 +46,7 @@ Don't Worry Send /shazam"""
 - ex /ip 192.180.0.1"""
 
     LYRICS_TXT = """<b>Lyrics 𝖣𝗈𝗐𝗇𝗅𝗈𝖺𝖽 𝖬𝗈𝖽𝗎𝗅𝖾</b>
-- 𝖨𝖿 𝗒𝗈𝗎 𝗐𝖺𝗇𝗍 𝗍𝗈 𝖽𝗈𝗐𝗇𝗅𝗈𝖺𝖽 𝖺 lyric, 𝖽𝗈𝗇'𝗍 𝗌𝖾𝖺𝗋𝖼𝗁 𝖿𝗈𝗋 𝗈𝗍𝗁𝖾𝗋 𝖻𝗈𝗍 𝗁𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖺𝗅𝗅 𝗂𝗇 𝗈𝗇𝖾 𝖻𝗈𝗍
+- 𝖨𝖿 𝗒𝗈𝗎 𝗐𝖺𝗇𝗍 𝗍𝗈 𝖽𝗈𝗐𝗇𝗅𝗈𝖺𝖽 𝖺 lyric, d𝗈𝗇'𝗍 𝗌𝖾𝖺𝗋𝖼𝗁 𝖿𝗈𝗋 𝗈𝗍𝗁𝖾𝗋 𝖻𝗈𝗍 . Use @Spotify_downloa_bot 𝖺𝗅𝗅 𝗂𝗇 𝗈𝗇𝖾 𝖻𝗈𝗍
 <b>𝖢𝗈𝗆𝗆𝖺𝗇𝖽</b>
 - /lyrics [Song Name] - 𝖳𝗈 𝗀𝖾𝗍 𝗍𝗁𝖾 lyrics
 <b>Usage</b>
@@ -56,29 +55,13 @@ Don't Worry Send /shazam"""
 <b>𝖡𝗎𝗀</b>
 𝖲𝗈𝗆𝖾𝗍𝗂𝗆𝖾𝗌 𝗂𝗍 𝗐𝗂𝗅𝗅 𝗌𝗁𝗈𝗐 𝖺𝗇 𝖾𝗋𝗋𝗈𝗋!"""
 
-    CARBON_TXT = """Reply To a Message To Make CarBon use /carbon for using this Module"""
+    CARBON_TXT = """Reply To a Message To Make CarBon .
+- Use /carbon for using this Module"""
 
     IMG_TXT = """If You Want To Make A image Of Text send
 /hand <anything> to Get the Photo"""
 
     FONTS_TXT = """ Want Some Stylish fonts send /font <anything>"""
-
-    BOTSTATUS_TXT = """Send /status for getting bot and heroku status"""
-
-    MAMMOKA_TXT = """𝐂𝐀𝐔𝐓𝐈𝐎𝐍 : <b>Iᴋᴋᴀ Fᴀɴs Aʀᴇ Pʀᴏʜɪʙɪᴛᴇᴅ Nᴇᴀʀ Tʜɪs ᴀʀᴇᴀ</b> 
-    
-    <b> 𝙍𝙀𝘼𝙎𝙊𝙉: </b>
-    Tʜɪs ғɪʟᴛᴇʀ ᴄᴏɴᴛᴀɪɴs ᴛᴏxɪᴄ ғᴜɴɴʏ sᴛɪᴄᴋᴇʀs 😂😂😂
-    
-    <b> 𝘾𝙊𝙈𝙈𝘼𝙉𝘿: </b> /ikka ☺☺
-    
-    """
-
-    AUNTY_TXT ="""<b>THE GREAT MALLU AUNTY</b>
-   
- Sᴇɴᴅ /aunty, 
- 
- Tʜᴇɴ Mᴀʟʟᴜ Aᴜɴᴛʏ Wɪʟʟ Tᴇxᴛ Yᴏᴜ Sᴏᴍᴇ Jᴏᴋᴇs 😂😂 """
 
     ABOUTME_TXT = """➢ 𝐌𝐲 𝐍𝐚𝐦𝐞: <a href='http://t.me/TigerShroffImdbot'>𝑇𝑖𝑔𝑒𝑟 𝑆𝒉𝑟𝑜𝑓𝑓 </a>
     
