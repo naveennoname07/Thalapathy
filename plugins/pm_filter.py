@@ -2486,7 +2486,8 @@ async def advantage_spell_chok(msg):
     m = await msg.reply(f"`Hey, {msg.from_user.mention}! I couldn't find anything related to {msg.text} Did you mean any one of these below 👇 ?`", reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(20)
     await m.delete()
-                    reply_markup=InlineKeyboardMarkup(btn))
+                     
+
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
     name = text or message.text
