@@ -1,9 +1,8 @@
-from pyrogram import Client , filters
-from os import execvp,sys , execl
-from sys import executable
 import psutil, shutil
+from os import execvp,sys , execl
+from pyrogram import Client , filters
 
-@Client.on_message(filters.command("restart") & filters.private)
+@Client.on_message(filters.command("restart") & ~filters.private)
 async def restart(_,message):
     await message.delete()
     await message.reply_text("⚰️")
