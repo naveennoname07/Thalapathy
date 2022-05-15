@@ -57,7 +57,7 @@ async def start(client, message):
         await m.delete()
         await message.reply_chat_action("typing")
         await message.reply_video(
-            video="https://telegra.ph/file/fc3b31cdbfbe9fcf16cd9.mp4",
+            video="https://telegra.ph//file/51c6ddc85c242d385fded.mp4",
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
@@ -101,7 +101,7 @@ async def start(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_vudeo(
-            video="https://telegra.ph/file/fc3b31cdbfbe9fcf16cd9.mp4",
+            video="https://telegra.ph//file/51c6ddc85c242d385fded.mp4",
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
