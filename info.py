@@ -86,7 +86,7 @@ SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>𝙁𝙞𝙡𝙚 𝙉𝙖𝙢𝙚 :</b><code>{file_name}</code>\n\n<b>𝙁𝙞𝙡𝙚 𝙎𝙞𝙯𝙚 :</b> {file_size}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>🀄𝙏𝙞𝙩𝙡𝙚 : <a href={url}>{title}</a>\n\n📆 𝙔𝙚𝙖𝙧 : <a href={url}/releaseinfo>{year}</a>\n\n☀️ 𝙇𝙖𝙣𝙜𝙨  : <code>{languages}</code>\n\n📆 𝙍𝙚𝙡𝙚𝙖𝙨𝙚 𝘿𝙖𝙩𝙚 : {release_date}\n\n🌟𝙍𝙖𝙩𝙞𝙣𝙜𝙨 : <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)\n\n📺𝙎𝙩𝙤𝙧𝙮 : <code>{plot}</code>")
-LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
+LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "True"), True)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
