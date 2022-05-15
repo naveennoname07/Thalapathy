@@ -50,4 +50,3 @@ geopy>=2.1.0
 py-tgcalls
 ffmpeg
 psutil
-shutil
