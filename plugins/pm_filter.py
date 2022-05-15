@@ -98,6 +98,8 @@ async def fil_mod(client, message):
       else:
           await m.edit("Use: /autofilter on or /autofilter off")
 
+    if FILTER_MODE.get(str(message.chat.id)) == "False":
+        return
 
 @Client.on_message(filters.group & filters.text & ~filters.edited & filters.incoming)
 async def give_filter(client, message):
