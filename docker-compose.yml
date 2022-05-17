@@ -4,6 +4,7 @@ services:
     build: .
     environment:
       API_ID: $API_ID
+      MESSAGE_DUMP: $MESSAGE_DUMP
       API_HASH: $API_HASH
       BOT_TOKEN: $BOT_TOKEM
       DATABASE_URI: $DATABASE_URI
