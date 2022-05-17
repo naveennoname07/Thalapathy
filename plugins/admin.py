@@ -15,7 +15,7 @@ from pyrogram.errors import (
 from pyrogram.types import Message
 
 from Alita import DEV_USERS, LOGGER, OWNER_ID, SUPPORT_GROUP, SUPPORT_STAFF
-from alita.bot_class import Alita
+from Alita.bot_class import Alita
 from Alita.database.approve_db import Approve
 from Alita.database.reporting_db import Reporting
 from Alita.tr_engine import tlang
