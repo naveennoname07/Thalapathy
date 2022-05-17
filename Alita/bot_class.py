@@ -25,13 +25,6 @@ from Alita.vars import Config
 
 INITIAL_LOCK = RLock()
 
-# Check if MESSAGE_DUMP is correct
-if MESSAGE_DUMP == -100 or not str(MESSAGE_DUMP).startswith("-100"):
-    raise Exception(
-        "Please enter a vaild Supergroup ID, A Supergroup ID starts with -100",
-    )
-
-
 class Alita(Client):
     """Starts the Pyrogram Client on the Bot Token when we do 'python3 -m alita'"""
 
