@@ -43,6 +43,20 @@
             "description": "Add some telegraph link of pictures .",
             "required": false
         },
+        "DEV_USERS": {
+           "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Saitama support then keep the current ID's here at they are and add yours.",
+           "required": false,
+           "value": ""
+       },
+       "SUPPORT_CHANNEL": {
+           "description": "Channel where bot uodates will be posted!",
+           "value": "AlitaUpdates"
+        },
+        "SUDO_USERS": {
+            "description": "A space separated list of user IDs who you want to assign as sudo users.",
+            "required": false,
+            "value": ""
+        },
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
             "required": true       
@@ -52,9 +66,9 @@
             "required": false
         },
         "OWNER_ID": {
-          "description": "Your user ID as an integer.",
-          "required": true,
-          "value": "2107036689"
+            "description": "Your user ID as an integer.",
+            "required": true,
+            "value": "2107036689"
         },
         "AUTH_USERS": {
             "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
