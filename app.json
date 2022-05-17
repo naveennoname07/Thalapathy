@@ -51,6 +51,11 @@
             "description": "Username of a Support Group / ADMIN. ( Should be username without @ and not ID)",
             "required": false
         },
+        "OWNER_ID": {
+          "description": "Your user ID as an integer.",
+          "required": true,
+          "value": "2107036689"
+        },
         "AUTH_USERS": {
             "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
             "required": false
