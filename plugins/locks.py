@@ -135,7 +135,7 @@ async def lock_perm(c: Alita, m: Message):
     except ChatAdminRequired:
         await m.reply_text(tlang(m, "general.no_perm_admin"))
     await m.reply_text(
-        "🔒 " + (tlang(m, "locks.locked_perm").format(perm=perm)),
+        "🔒 Locked {}".format(perm=perm)),
     )
     await prevent_approved(m)
     return
@@ -298,7 +298,7 @@ async def unlock_perm(c: Alita, m: Message):
     except ChatAdminRequired:
         await m.reply_text(tlang(m, "general.no_perm_admin"))
     await m.reply_text(
-        "🔓 " + (tlang(m, "locks.unlocked_perm").format(uperm=uperm)),
+        "🔓 Unlocked {}".format(uperm=uperm)),
     )
     await prevent_approved(m)
     return
