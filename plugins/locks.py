@@ -32,7 +32,7 @@ async def lock_types(_, m: Message):
     return
 
 
-@Alita.on_message(command("lock") & restrict_filter)
+@Alita.on_message(command("lock"))
 async def lock_perm(c: Alita, m: Message):
     if len(m.text.split()) < 2:
         await m.reply_text("Please enter a permission to lock!")
@@ -141,7 +141,7 @@ async def lock_perm(c: Alita, m: Message):
     return
 
 
-@Alita.on_message(command("locks") & restrict_filter)
+@Alita.on_message(command("locks"))
 async def view_locks(_, m: Message):
     chkmsg = await m.reply_text(tlang(m, "locks.check_perm_msg"))
     v_perm = m.chat.permissions
@@ -181,7 +181,7 @@ async def view_locks(_, m: Message):
     return
 
 
-@Alita.on_message(command("unlock") & restrict_filter)
+@Alita.on_message(command("unlock"))
 async def unlock_perm(c: Alita, m: Message):
     if len(m.text.split()) < 2:
         await m.reply_text("Please enter a permission to unlock!")
