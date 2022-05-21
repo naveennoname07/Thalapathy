@@ -61,7 +61,7 @@ def tomorrow():
     return str(dt_tom())
 
 
-@Alita.on_message(filters.command("/shipping") & ~filters.edited)
+@Alita.on_message(filters.command("shipping") & ~filters.edited)
 @capture_err
 async def couple(_, message):
     if message.chat.type == "private":
