@@ -9,7 +9,7 @@ from Alita import OWNER_ID
 from pyrogram import Client as Alita 
 from database.antispam_db import GBan
 from database.greetings_db import Greetings
-from Alita.utils.custom_filters import admin_filter, bot_admin_filter, command
+from Alita.utils.custom_filters import admin_filter, command
 from Alita.utils.msg_types import Types, get_wlcm_type
 from Alita.utils.parser import escape_markdown, mention_html
 from Alita.utils.string import (
@@ -126,7 +126,7 @@ async def cleanservice(_, m: Message):
     return
 
 
-@Alita.on_message(command("setwelcome") & admin_filter & bot_admin_filter)
+@Alita.on_message(command("setwelcome") & admin_filter)
 async def save_wlcm(_, m: Message):
     db = Greetings(m.chat.id)
     if m and not m.from_user:
@@ -164,7 +164,7 @@ async def save_wlcm(_, m: Message):
     return
 
 
-@Alita.on_message(command("setgoodbye") & admin_filter & bot_admin_filter)
+@Alita.on_message(command("setgoodbye") & admin_filter)
 async def save_gdbye(_, m: Message):
     db = Greetings(m.chat.id)
     if m and not m.from_user:
@@ -202,7 +202,7 @@ async def save_gdbye(_, m: Message):
     return
 
 
-@Alita.on_message(command("resetgoodbye") & admin_filter & bot_admin_filter)
+@Alita.on_message(command("resetgoodbye") & admin_filter)
 async def resetgb(_, m: Message):
     db = Greetings(m.chat.id)
     if m and not m.from_user:
@@ -213,7 +213,7 @@ async def resetgb(_, m: Message):
     return
 
 
-@Alita.on_message(command("resetwelcome") & admin_filter & bot_admin_filter)
+@Alita.on_message(command("resetwelcome") & admin_filter)
 async def resetwlcm(_, m: Message):
     db = Greetings(m.chat.id)
     if m and not m.from_user:
