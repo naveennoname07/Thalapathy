@@ -5,7 +5,7 @@ from pyrogram.types import ChatPermissions, Message
 
 from alita import LOGGER
 from alita.bot_class import Alita
-from alita.database.approve_db import Approve
+from database.approve_db import Approve
 from alita.tr_engine import tlang
 from alita.utils.custom_filters import command, restrict_filter
 
