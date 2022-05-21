@@ -50,11 +50,11 @@ except Exception as ef:
     sysexit(1)
 
 LOGGER.info("------------------------")
-LOGGER.info("|      Tɪɢᴇʀ Sʜʀᴏғғ     |")
+LOGGER.info("|      Dhanush TG      |")
 LOGGER.info("------------------------")
 LOGGER.info(f"Version: {Config.VERSION}")
 LOGGER.info(f"Owner: {str(Config.OWNER_ID)}")
-LOGGER.info("Source Code: https://github.com/200920082007/TigerShroff\n")
+LOGGER.info("Source Code: https://github.com/Naveen-TG\n")
 
 # Account Related
 BOT_TOKEN = Config.BOT_TOKEN
