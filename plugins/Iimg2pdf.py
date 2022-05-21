@@ -30,7 +30,7 @@ from PIL import Image
 from pyrogram import filters
 from pyrogram.types import Message
 
-from wbb import app
+from Alita.bot_class import Alita
 from wbb.core.decorators.errors import capture_err
 from wbb.core.sections import section
 
@@ -93,7 +93,7 @@ async def convert(
             remove(file)
 
 
-@app.on_message(filters.command("pdf") & ~filters.edited)
+@Alita.on_message(filters.command("pdf") & ~filters.edited)
 @capture_err
 async def img_to_pdf(_, message: Message):
     reply = message.reply_to_message
