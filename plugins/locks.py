@@ -7,7 +7,7 @@ from Alita import LOGGER
 from Alita.bot_class import Alita
 from database.approve_db import Approve
 from Alita.tr_engine import tlan
-
+from Alita.utils.custom_filters import command, restrict_filter
 
 @Alita.on_message(command("locktypes"))
 async def lock_types(_, m: Message):
