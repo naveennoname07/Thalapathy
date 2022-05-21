@@ -6,8 +6,7 @@ from pyrogram.types import ChatPermissions, Message
 from Alita import LOGGER
 from Alita.bot_class import Alita
 from database.approve_db import Approve
-from Alita.tr_engine import tlang
-from Alita.utils.custom_filters import command, restrict_filter
+from Alita.tr_engine import tlan
 
 
 @Alita.on_message(command("locktypes"))
