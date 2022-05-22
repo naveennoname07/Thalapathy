@@ -51,3 +51,4 @@ py-tgcalls
 ffmpeg
 psutil
 img2pdf
+pyromod
