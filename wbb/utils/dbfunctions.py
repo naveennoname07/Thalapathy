@@ -24,7 +24,6 @@ SOFTWARE.
 import codecs
 import pickle
 from typing import Dict, List, Union
-from info import DATABASE_URI as MONGO_URL
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 
 # SOME THINGS ARE FUCKED UP HERE, LIKE TOGGLEABLES HAVE THEIR OWN COLLECTION
