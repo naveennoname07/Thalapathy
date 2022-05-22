@@ -7,6 +7,7 @@ python-telegram-bot
 umongo
 requests
 bs4
+pyromod
 imdbpy
 youtube-dl
 youtube_search
