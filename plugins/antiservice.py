@@ -1,9 +1,5 @@
-# Written By [MaskedVirus | swatv3nub] for William and Ryūga
-# Kang With Proper Credits
-
 from pyrogram import filters
 
-from wbb import app
 from wbb.core.decorators.permissions import adminsOnly
 from wbb.utils.dbfunctions import (
     antiservice_off,
