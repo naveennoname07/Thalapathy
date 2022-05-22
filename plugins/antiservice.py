@@ -5,7 +5,7 @@ from pyrogram import filters
 
 from Alita.bot_class import Alita
 from wbb.core.decorators.permissions import adminsOnly
-from wbb.utils.__init___ import antiservice_off ,antiservice_on , is_antiservice_on
+from wbb.__init___ import antiservice_off ,antiservice_on , is_antiservice_on
 
 __PLUGIN__ = "AntiService"
 __alt_name__ = """
