@@ -71,10 +71,7 @@ db = mongo_client.wbb
 
 
 
-log.info("Starting bot client")
-app.start()
-log.info("Starting userbot client")
-app2.start()
+
 
 
 
