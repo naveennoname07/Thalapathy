@@ -76,21 +76,7 @@ app.start()
 log.info("Starting userbot client")
 app2.start()
 
-log.info("Gathering profile info")
-x = app.get_me()
-y = app2.get_me()
 
-BOT_ID = x.id
-BOT_NAME = x.first_name + (x.last_name or "")
-BOT_USERNAME = x.username
-BOT_MENTION = x.mention
-BOT_DC_ID = x.dc_id
-
-USERBOT_ID = y.id
-USERBOT_NAME = y.first_name + (y.last_name or "")
-USERBOT_USERNAME = y.username
-USERBOT_MENTION = y.mention
-USERBOT_DC_ID = y.dc_id
 
 
 
