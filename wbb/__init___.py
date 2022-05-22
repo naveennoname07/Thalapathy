@@ -1,5 +1,5 @@
 from info import DATABASE_URI as MONGO_URL
-
+from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 
 class Log:
     def __init__(self, save_to_file=False, file_name="wbb.log"):
