@@ -3,19 +3,23 @@
 
 from pyrogram import filters
 
-from Alita.bot_class import Alita
+from wbb import app
 from wbb.core.decorators.permissions import adminsOnly
-from wbb.utils.dbfunctions import antiservice_off ,antiservice_on , is_antiservice_on
+from wbb.utils.dbfunctions import (
+    antiservice_off,
+    antiservice_on,
+    is_antiservice_on,
+)
 
-__PLUGIN__ = "AntiService"
-__alt_name__ = """
+__MODULE__ = "AntiService"
+__HELP__ = """
 Plugin to delete service messages in a chat!
 
 /antiservice [enable|disable]
 """
 
 
-@Alita.on_message(
+@app.on_message(
     filters.command("antiservice")
     & ~filters.private
     & ~filters.edited
@@ -45,7 +49,7 @@ async def anti_service(_, message):
         )
 
 
-@Alita.on_message(filters.service, group=11)
+@app.on_message(filters.service, group=11)
 async def delete_service(_, message):
     chat_id = message.chat.id
     try:
