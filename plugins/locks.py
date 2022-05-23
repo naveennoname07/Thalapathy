@@ -62,7 +62,7 @@ async def lock_perm(c: Alita, m: Message):
         except ChatNotModified:
             pass
         except ChatAdminRequired:
-            await m.reply_text("Ehh no  permission :)")
+            await m.reply_text("Ehh no  permission :)" ,m ("?heh"))
         await m.reply_text(f"locked all  🔒 ")
         await prevent_approved(m)
         return
@@ -112,7 +112,7 @@ async def lock_perm(c: Alita, m: Message):
         perm = "pin"
 
     else:
-        await m.reply_text(f"locks.invalid_lock")
+        await m.reply_text(f"locks invalid_lock ! ")
         return
 
     try:
@@ -134,7 +134,7 @@ async def lock_perm(c: Alita, m: Message):
         pass
     except ChatAdminRequired:
         await m.reply_text(tlang(m, "general.no_perm_admin"))
-    await m.reply_text(f" lol no permission :) ")
+    await m.reply_text(f"locked 🔒 ")
     await prevent_approved(m)
     return
 
@@ -192,7 +192,7 @@ async def unlock_perm(c: Alita, m: Message):
     chat_id = m.chat.id
 
     if not unlock_type:
-        await m.reply_text("not valid lock")
+        await m.reply_text(f"not valid lock")
         return
 
     if unlock_type == "all":
@@ -215,7 +215,7 @@ async def unlock_perm(c: Alita, m: Message):
             pass
         except ChatAdminRequired:
             await m.reply_text(tlang(m, "general.no_perm_admin"))
-        await m.reply_text(f"locks.unlock_all")
+        await m.reply_text(f"unlocked all 🔓")
         await prevent_approved(m)
         return
 
