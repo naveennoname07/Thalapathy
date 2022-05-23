@@ -112,7 +112,7 @@ async def lock_perm(c: Alita, m: Message):
         perm = "pin"
 
     else:
-        await m.reply_text(tlang(m, "locks.invalid_lock"))
+        await m.reply_text(f"locks.invalid_lock"))
         return
 
     try:
@@ -143,7 +143,11 @@ async def lock_perm(c: Alita, m: Message):
 
 @Alita.on_message(command("locks") & restrict_filter)
 async def view_locks(_, m: Message):
-    chkmsg = await m.reply_text(tlang(m, "locks.check_perm_msg"))
+    perms = ""
+    for i in permissions:
+        perms += f"__**{i}**__\n"
+
+    chkmsg = await m.reply_text(perms)
     v_perm = m.chat.permissions
 
     async def convert_to_emoji(val: bool):
@@ -213,7 +217,7 @@ async def unlock_perm(c: Alita, m: Message):
             pass
         except ChatAdminRequired:
             await m.reply_text(tlang(m, "general.no_perm_admin"))
-        await m.reply_text("🔓 " + (tlang(m, "locks.unlock_all")))
+        await m.reply_text(f"locks.unlock_all")
         await prevent_approved(m)
         return
 
@@ -273,7 +277,7 @@ async def unlock_perm(c: Alita, m: Message):
         uperm = "pin"
 
     else:
-        await m.reply_text(tlang(m, "locks.invalid_lock"))
+        await m.reply_text(f"locks.invalid_lock")
         return
 
     try:
@@ -297,9 +301,8 @@ async def unlock_perm(c: Alita, m: Message):
         pass
     except ChatAdminRequired:
         await m.reply_text(tlang(m, "general.no_perm_admin"))
-    await m.reply_text(
-        "🔓 " + (tlang(m, "locks.unlocked_perm").format(uperm=uperm)),
-    )
+    await m.reply_text("unlocked 🔓"),
+    
     await prevent_approved(m)
     return
 
