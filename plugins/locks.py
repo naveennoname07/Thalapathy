@@ -63,8 +63,7 @@ async def lock_perm(c: Alita, m: Message):
             pass
         except ChatAdminRequired:
             await m.reply_text("Ehh no  permission :)"(m, "general.no_perm_admin"))
-        await m.reply_text("🔒 " + ("locked all 
-🔐"(m, "locks.lock_all")))
+        await m.reply_text(f"🔒 " + ("locked all 🔐"(m, "locks.lock_all")))
         await prevent_approved(m)
         return
 
