@@ -23,7 +23,7 @@ from Alita.vars import Config
 
 
 @Client.on_message(command(["warn", "swarn", "dwarn"]) & restrict_filter)
-async def warn(client, message):
+async def warn(client, m):
     if m.reply_to_message:
         r_id = m.reply_to_message.message_id
         if len(m.text.split()) >= 2:
