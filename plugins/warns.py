@@ -23,7 +23,7 @@ from Alita.vars import Config
 
 
 @Client.on_message(command(["warn", "swarn", "dwarn"]) & restrict_filter)
-async def warn(client, message):
+async def warn(client, m):
     if m.reply_to_message:
         r_id = m.reply_to_message.message_id
         if len(m.text.split()) >= 2:
@@ -133,7 +133,7 @@ async def warn(client, message):
 
 
 @Client.on_message(command("resetwarns") & restrict_filter)
-async def reset_warn(client, message):
+async def reset_warn(client, m):
 
     if not len(m.command) > 1 and not m.reply_to_message:
         await m.reply_text("I can't warn nothing! Tell me user whom I should warn")
@@ -172,7 +172,7 @@ async def reset_warn(client, message):
 
 
 @Client.on_message(command("warns") & filters.group)
-async def list_warns(client, message):
+async def list_warns(client, m):
 
     user_id, user_first_name, _ = await extract_user(c, m)
 
@@ -212,7 +212,7 @@ async def list_warns(client, message):
 
 
 @Client.on_message(command(["rmwarn", "removewarn"]) & restrict_filter)
-async def remove_warn(client, message):
+async def remove_warn(client, m):
 
     if not len(m.command) > 1 and not m.reply_to_message:
         await m.reply_text(
