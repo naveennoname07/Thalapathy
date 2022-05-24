@@ -9,7 +9,7 @@ from pyrogram.types import (
     InlineKeyboardMarkup,
     Message,
 )
-
+from info import ADMINS
 from Alita import LOGGER, SUPPORT_STAFF
 from database.rules_db import Rules
 from database.users_db import Users
@@ -22,7 +22,7 @@ from Alita.utils.parser import mention_html
 from Alita.vars import Config
 
 
-@Client.on_message(command(["warn", "swarn", "dwarn"]) & restrict_filter)
+@Client.on_message(filters.command(["warn", "swarn", "dwarn"]))
 async def warn(client, m):
     if m.reply_to_message:
         r_id = m.reply_to_message.message_id
@@ -45,15 +45,12 @@ async def warn(client, m):
 
     user_id, user_first_name, _ = await extract_user(c, m)
 
-    if user_id == Config.BOT_ID:
+    if user_id == 5011611409:
         await m.reply_text("Huh, why would I warn myself?")
         return
 
-    if user_id in SUPPORT_STAFF:
-        await m.reply_text(tlang(m, "admin.support_cannot_restrict"))
-        LOGGER.info(
-            f"{m.from_user.id} trying to warn {user_id} (SUPPORT_STAFF) in {m.chat.id}",
-        )
+    if user_id in ADMINS:
+        await m.reply_text("This user is in my support staff, cannot restrict them.")
         return
 
     try:
@@ -132,7 +129,7 @@ async def warn(client, m):
     await m.stop_propagation()
 
 
-@Client.on_message(command("resetwarns") & restrict_filter)
+@Client.on_message(filters.command("resetwarns"))
 async def reset_warn(client, m):
 
     if not len(m.command) > 1 and not m.reply_to_message:
@@ -141,16 +138,13 @@ async def reset_warn(client, m):
 
     user_id, user_first_name, _ = await extract_user(c, m)
 
-    if user_id == Config.BOT_ID:
+    if user_id == 5011611409:
         await m.reply_text("Huh, why would I warn myself?")
         return
 
-    if user_id in SUPPORT_STAFF:
+    if user_id in ADMINS:
         await m.reply_text(
             "They are support users, cannot be restriced, how am I then supposed to unrestrict them?",
-        )
-        LOGGER.info(
-            f"{m.from_user.id} trying to resetwarn {user_id} (SUPPORT_STAFF) in {m.chat.id}",
         )
         return
 
@@ -171,20 +165,17 @@ async def reset_warn(client, m):
     return
 
 
-@Client.on_message(command("warns") & filters.group)
+@Client.on_message(filters.command("warns") & filters.group)
 async def list_warns(client, m):
 
     user_id, user_first_name, _ = await extract_user(c, m)
 
-    if user_id == Config.BOT_ID:
+    if user_id == 5011611409:
         await m.reply_text("Huh, why would I warn myself?")
         return
 
-    if user_id in SUPPORT_STAFF:
+    if user_id in ADMINS:
         await m.reply_text("This user has no warns!")
-        LOGGER.info(
-            f"{m.from_user.id} trying to check warns of {user_id} (SUPPORT_STAFF) in {m.chat.id}",
-        )
         return
 
     try:
@@ -211,7 +202,7 @@ async def list_warns(client, m):
     return
 
 
-@Client.on_message(command(["rmwarn", "removewarn"]) & restrict_filter)
+@Client.on_message(filters.command(["rmwarn", "removewarn"]))
 async def remove_warn(client, m):
 
     if not len(m.command) > 1 and not m.reply_to_message:
@@ -222,15 +213,12 @@ async def remove_warn(client, m):
 
     user_id, user_first_name, _ = await extract_user(c, m)
 
-    if user_id == Config.BOT_ID:
+    if user_id == 5011611409:
         await m.reply_text("Huh, why would I warn myself?")
         return
 
-    if user_id in SUPPORT_STAFF:
+    if user_id in ADMINS:
         await m.reply_text("This user has no warns!")
-        LOGGER.info(
-            f"{m.from_user.id} trying to remove warns of {user_id} (SUPPORT_STAFF) in {m.chat.id}",
-        )
         return
 
     try:
@@ -309,7 +297,7 @@ async def remove_last_warn_btn(client, q: CallbackQuery):
     return
 
 
-@Client.on_message(command(["warnings", "warnsettings"]) & admin_filter)
+@Client.on_message(filters.command(["warnings", "warnsettings"]))
 async def get_settings(_, m: Message):
     warn_settings_db = WarnSettings(m.chat.id)
     settings = warn_settings_db.get_warnings_settings()
@@ -323,7 +311,7 @@ async def get_settings(_, m: Message):
     return
 
 
-@Client.on_message(command("warnmode") & admin_filter)
+@Client.on_message(filters.command("warnmode"))
 async def warnmode(_, m: Message):
     warn_settings_db = WarnSettings(m.chat.id)
     if len(m.text.split()) > 1:
@@ -344,7 +332,7 @@ async def warnmode(_, m: Message):
     return
 
 
-@Client.on_message(command("warnlimit") & admin_filter)
+@Client.on_message(filters.command("warnlimit"))
 async def warnlimit(_, m: Message):
     warn_settings_db = WarnSettings(m.chat.id)
     if len(m.text.split()) > 1:
