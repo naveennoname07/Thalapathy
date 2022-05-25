@@ -93,7 +93,7 @@ async def warn(client, m):
     if rules:
         kb = InlineKeyboardButton(
             "Rules 📋",
-            url=f"https://t.me/{Config.BOT_USERNAME}?start=rules_{m.chat.id}",
+            url=f"https://t.me/VijayFilterTG_BoT?start=rules_{m.chat.id}",
         )
     else:
         kb = InlineKeyboardButton(
