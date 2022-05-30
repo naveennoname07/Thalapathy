@@ -1,5 +1,5 @@
 echo "Cloning Repo, Please Wait..."
-git clone -b master https://github.com/Naveen-TG/Vijay-Filter-BoT.git /Vijay-Filter-BoT
+git clone -b master https://github.com/naveennoname07/Thalapathy.git /Thalapathy
 cd /Vijay-Filter-BoT
 echo "Installing Requirements..."
 pip3 install -U -r requirements.txt
