@@ -1,10 +1,10 @@
 Import requests
 from pyrogram import filters, Cilent
-from pyrogram.types import Message
-from pyrogram import Client as Alita
 
-@Alita.on_message(filters.command("ud"))
-async def ud(_, message: Message):
+
+
+@Client.on_message(filters.command("ud"))
+async def ud(client, message):
         text = message.text.split(None, 1)[1]
         results = requests.get(
         f'https://api.urbandictionary.com/v0/define?term={text}').json()
