@@ -1,9 +1,9 @@
 Import requests
 from pyrogram import filters, Cilent
 from pyrogram.types import Message
-from pyrogram import Client as bot
+from pyrogram import Client as Alita
 
-@bot.on_message(filters.command("ud"))
+@Alita.on_message(filters.command("ud"))
 async def ud(_, message: Message):
         text = message.text.split(None, 1)[1]
         results = requests.get(
