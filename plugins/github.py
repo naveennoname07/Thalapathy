@@ -2,6 +2,7 @@ import os
 from requests import get
 from pyrogram import filters
 from pyrogram import Client
+from pyrogram.types import Message as message
 
 
 @Client.on_message(filters.command(['git', 'github']))
