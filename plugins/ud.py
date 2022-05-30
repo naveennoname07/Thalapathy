@@ -1,4 +1,4 @@
-Import requests
+import requests
 from pyrogram import filters, Client
 
 
