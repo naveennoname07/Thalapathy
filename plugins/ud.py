@@ -1,5 +1,5 @@
 Import requests
-from pyrogram import filters, Cilent
+from pyrogram import filters, Client
 
 
 
