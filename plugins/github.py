@@ -1,10 +1,10 @@
 import os
 from requests import get
 from pyrogram import filters
-from pyrogram import bot
+from pyrogram import Client as Alita
 
 
-@bot.on_message(filters.command(['git', 'github']))
+@Alita.on_message(filters.command(['git', 'github']))
 def git(_, message):
     user = message.text.split(' ')[1]
     res = get(f'https://api.github.com/users/{user}').json()
